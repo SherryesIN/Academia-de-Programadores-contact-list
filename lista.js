@@ -6,10 +6,14 @@ Crea una función para borrar un contacto existente de la lista
 Crea una función para imprimir en consola los contactos presentes en la lista
 Publica tu código en Github, en tu repositorio contact-list crea un branch llamado project-1
  y compártelo con nosotros. 👍🏼⬇️*/
-
+ /*mi Array*/
 var contactos = ["Clara Fuenzalida" , "Alejandra Aranda" , "Angel Ramirez" , "Andrea Conejeros" , "josé Orellana " ,
         "Claudio Jorquera" , "Darío Becerra" , "Iara Portilla" , "Cesar Oyarzun" , "Marina Parada" , "Monserrat varela" ,
         "Richard Carrasco " ];
+ /*mi string*/
+contactos.toString ();
+contactos.join ("-"); /* or contactos.join (""):*/
+contactos ='Clara Fuenzalida-Alejandra Aranda-Angel Ramirez-Andrea Conejeros-josé Orellana -Claudio Jorquera-Darío Becerra-Iara Portilla-Cesar Oyarzun-Marina Parada-Monserrat varela-Richard Carrasco '
 
 /*agregar contactos*/
 /*opcion A*/
