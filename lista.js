@@ -16,7 +16,7 @@ var contactos = ["Clara Fuenzalida" , "Alejandra Aranda" , "Angel Ramirez" , "An
 this.addContact = function(){
     contactos.push("nombre a agregar");}
 
-/*opcion B por revisar*/
+/*opcion B por consultar */
 this.NewContact = function(){
     let nombre = prompt("Nombre de Contacto");
     nombre = parseInt(nombre);
