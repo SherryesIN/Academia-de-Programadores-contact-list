@@ -68,7 +68,25 @@ myContactos.id = "Id1";
 myContactos.Phone = "Phone1";
 myContactos.Address = "Address1";
 
+
+/*función para estos objetos*/
+
+
+function Contactos(Name, LastName, Phone, Id, Address) {
+    this.Name = Name;
+    this.LastName = LastName;
+    this.Phone = Phone;
+    this.Id = Id;
+    this.Address = Address;
+  }
+
+  var mycontactos = new Contactos('Clara', 'Fuenzalida', 'Phone1', 'Id1', 'Address1');
+
 /* 
+EXPERIMENTANDO OPCIONES Y MEJORARDO MI CODIGO
+
+____________________________________________________________________
+
 otras formas de anotar los objetos */
 
 /*var myContactos = {
@@ -89,15 +107,112 @@ myContactos['Address'] = 'Address1';
 
 */
 
-/*función para estos objetos*/
+//FINALMENTE MI ARREGLO DE DATOS SERIA ASI
 
-function Contactos(Name, LastName, Phone, Id, Address) {
-    this.Name = Name;
-    this.LastName = LastName;
-    this.Phone = Phone;
-    this.Id = Id;
-    this.Address = Address;
-  }
+/*var mycontact= [{
 
-  var mycontactos = new Contactos('Clara', 'Fuenzalida', 'Phone1', 'Id1', 'Address1');
+    "name": "Clara Fuenzalida" ,
+    "phone": "Phone1",
+    "address": "address1"
+},{
+    "name": "Alejandra Aranda",
+    "phone": "Phone2",
+    "address": "address2"
+},{
+    "name": "Angel Ramirez",
+    "phone": "Phone3",
+    "address": "address3"
+},{
+    "name": "Andrea Conejeros" ,
+    "phone": "Phone4",
+    "address": "address4"
+},{
+    "name": "josé Orellana " ,
+    "phone": "Phone5",
+    "address": "address5"
+},{
+    "name":  "Claudio Jorquera" ,
+    "phone": "Phone6",
+    "address": "address6"
+},{
+    "name":  "Darío Becerra" ,
+    "phone": "Phone7",
+    "address": "address7"
+},{
+    "name":  "Iara Portilla" ,
+    "phone": "Phone8",
+    "address": "address8"
+}
+];
+es mas ordenado y claro
+
+
+PARA AGREGAR UN NUEVO CONTACTO AL FINAL
+
+
+mycontact.push({name: 'Josefina Smith', phone: 'Phone9', address: 'address9'});
+
+
+
+PARA REMOVER UN CONTACTO 
+
+var mycontact = mycontact.filter(function(contact) {
+    return contact.phone !== 'Phone5'; 
+});
+ 
+console.log(mycontact);
+
+
+  //Bonus: Añade una función que permita actualizar un contacto
+  /* siendo mi arreglo de contactos así
+  //asi tendría
+/*var mycontact= [{
+
+    "name": "Clara Fuenzalida" ,
+    "phone": "Phone1",
+    "address": "address1"
+},{
+    "name": "Alejandra Aranda",
+    "phone": "Phone2",
+    "address": "address2"
+},{
+    "name": "Angel Ramirez",
+    "phone": "Phone3",
+    "address": "address3"
+},{
+    "name": "Andrea Conejeros" ,
+    "phone": "Phone4",
+    "address": "address4"
+},{
+    "name": "josé Orellana " ,
+    "phone": "Phone5",
+    "address": "address5"
+},{
+    "name":  "Claudio Jorquera" ,
+    "phone": "Phone6",
+    "address": "address6"
+},{
+    "name":  "Darío Becerra" ,
+    "phone": "Phone7",
+    "address": "address7"
+},{
+    "name":  "Iara Portilla" ,
+    "phone": "Phone8",
+    "address": "address8"
+}
+];
+  
+  LA FUNCION PARA ACTUALIZAR UN CONTACTO
+  
+  var newcontact = "Carla Torres";
+  var address= "address5";
+  
+  mycontact.map(function(dato){
+    if(dato.address == address){
+      dato.name = newcontact;
+    }
+    
+    return dato;
+  });
+*/
 
